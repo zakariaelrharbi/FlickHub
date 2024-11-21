@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeScreen from './assets/Components/HomeScreen'
+import HomeScreen from './assets/Pages/HomeScreen'
 import './App.css'
 
 function App() {
