@@ -1,11 +1,12 @@
 import './App.css'
+import HomeScreen from './Components/HomeScreen'
 
 function App() {
 
   return (
-    <>
-      hi
-    </>
+    <div className='App'>
+      <HomeScreen/>
+    </div>
   )
 }
 
