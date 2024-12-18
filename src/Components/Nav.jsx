@@ -7,10 +7,10 @@ const Nav = () => {
   return (
     <div className='Nav'>
         {/* the logo */}
-          <img src={Logo} alt="" />
+          <img className='Nav_logo' src={Logo} alt="" />
       This is the nav
         {/* the avatar */}
-        <img src={Avatar} alt="" />
+        <img className='Nav_avatar' src={Avatar} alt="" />
     </div>
   )
 }
