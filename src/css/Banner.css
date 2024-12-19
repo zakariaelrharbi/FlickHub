@@ -1,3 +1,7 @@
 .Banner {
-    color: rgb(110, 192, 10);
+    height: 50vh;
+    position: relative;
+    width: 100%;
+    color: white;
+    object-fit: contain;
 }

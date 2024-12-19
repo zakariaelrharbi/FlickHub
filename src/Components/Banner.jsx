@@ -1,11 +1,17 @@
 import React from 'react'
 import '../css/Banner.css'
+import ImageBanner from '../assets/banner.webp'
 
 const Banner = () => {
   return (
-    <div className='Banner'>
+    <header className='Banner'
+    style={{
+      backgroundImage:{ImageBanner},
+      backgroundSize:'cover',
+      backgroundPosition:'center center',
+    }}>
       
-    </div>
+    </header>
   )
 }
 
