@@ -13,6 +13,47 @@ const HomeScreen = () => {
         <Banner/>
       {/* Rows */}
         <Rows/>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
     </div>
   )
 }

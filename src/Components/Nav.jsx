@@ -1,8 +1,9 @@
-import React from 'react'
+import React , {useState} from 'react'
 import '../css/Nav.css'
 import Avatar from '../assets/avatar.jpg'
 
 const Nav = () => {
+  const [show, SetShow] = useState(0);
   return (
     <div className='Nav Nav_black'>
       <div className='Nav_contents'>
