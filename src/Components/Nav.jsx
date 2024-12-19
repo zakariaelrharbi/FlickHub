@@ -6,11 +6,12 @@ import Avatar from '../assets/avatar.jpg'
 const Nav = () => {
   return (
     <div className='Nav'>
+      <div className='Nav_contents'>
         {/* the logo */}
           <img className='Nav_logo' src={Logo} alt="" />
-      This is the nav
         {/* the avatar */}
         <img className='Nav_avatar' src={Avatar} alt="" />
+      </div>
     </div>
   )
 }
