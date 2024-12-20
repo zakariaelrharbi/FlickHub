@@ -10,7 +10,9 @@ const Banner = () => {
       backgroundPosition:"center center",
     }}>
       <div className="Banner_contents">
-        
+        <h1 className="Banner_title">
+          
+        </h1>
       </div>
     </header>
   )
