@@ -14,7 +14,7 @@ const Banner = () => {
           Movie Name
         </h1>
         <div className="Banner_buttons">
-          
+          <button>Play</button>
         </div>
       </div>
     </header>
