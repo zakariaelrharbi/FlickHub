@@ -9,7 +9,9 @@ const Banner = () => {
       backgroundImage:`url("https://cdn.playbackonline.ca/wp/wp-content/uploads/2020/05/Screen-Shot-2020-05-04-at-1.41.10-PM.png")`,
       backgroundPosition:"center center",
     }}>
-      
+      <div className="Banner_contents">
+        
+      </div>
     </header>
   )
 }
