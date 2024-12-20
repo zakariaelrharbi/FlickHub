@@ -15,6 +15,7 @@ const Banner = () => {
         </h1>
         <div className="Banner_buttons">
           <button>Play</button>
+          <button>My List</button>
         </div>
       </div>
     </header>
