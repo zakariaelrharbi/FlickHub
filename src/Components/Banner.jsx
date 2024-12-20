@@ -11,8 +11,11 @@ const Banner = () => {
     }}>
       <div className="Banner_contents">
         <h1 className="Banner_title">
-          
+          Movie Name
         </h1>
+        <div className="Banner_buttons">
+          
+        </div>
       </div>
     </header>
   )
