@@ -17,7 +17,11 @@ const Banner = () => {
           <button className='Banner_button'>Play</button>
           <button className='Banner_button'>My List</button>
         </div>
+        <h1 className="Banner_description">
+          this is the description
+        </h1>
       </div>
+      <div className="banner--fadeBottom"/>
     </header>
   )
 }
