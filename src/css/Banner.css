@@ -5,7 +5,9 @@
     object-fit: contain;
 }
 .Banner_contents{
-
+    margin-left: 30px;
+    padding-top: 140px;
+    height: 21.11vh;
 }
 .Banner_title{
 
@@ -20,5 +22,5 @@
 
 }
 .banner--fadeBottom{
-    
+
 }
