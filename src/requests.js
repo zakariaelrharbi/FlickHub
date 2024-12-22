@@ -1,4 +1,4 @@
-const API_KEY=process.env.TMDB_API_KEY
+const API_KEY= '702bc48e34a7498c4462e41ac3d37b41'
 
 
 const requests={

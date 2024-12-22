@@ -1,7 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '../css/Banner.css'
+import axios from '../axios';
+import Requests from '../requests';
 
 const Banner = () => {
+  const [Movie, SetMovie]= useState([]);
+
+  useEffect(()=>{
+    async function fetchData() {
+      const request = await axios.get(Requests.fetchNetflixOriginals);
+      SetMovie(
+        request.data.results[
+          Math.floor(Math.random() * request.data.results.length - 1)
+        ]
+      )
+      return request;
+    }
+    fetchData();
+  }, [])
+  console.log(Movie);
   function truncateDescription(string, n){
     return string?.length > n ? string.substr(0, n-1) + '...' : string
   }
@@ -9,12 +26,12 @@ const Banner = () => {
     <header className='Banner'
     style={{
       backgroundSize:"cover",
-      backgroundImage:`url("https://cdn.playbackonline.ca/wp/wp-content/uploads/2020/05/Screen-Shot-2020-05-04-at-1.41.10-PM.png")`,
+      backgroundImage:`url("https://image.tmdb.org/t/p/original/${Movie?.backdrop_path}")`,
       backgroundPosition:"center center",
     }}>
       <div className="Banner_contents">
         <h1 className="Banner_title">
-          Movie Name
+          {Movie?.title || Movie?.name || Movie?.original_name}
         </h1>
         <div className="Banner_buttons">
           <button className='Banner_button'>Play</button>
