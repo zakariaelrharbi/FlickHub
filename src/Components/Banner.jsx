@@ -18,7 +18,6 @@ const Banner = () => {
     }
     fetchData();
   }, [])
-  console.log(Movie);
   function truncateDescription(string, n){
     return string?.length > n ? string.substr(0, n-1) + '...' : string
   }
