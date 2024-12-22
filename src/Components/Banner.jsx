@@ -38,7 +38,7 @@ const Banner = () => {
           <button className='Banner_button'>My List</button>
         </div>
         <h1 className="Banner_description">
-          {truncateDescription("this is the description this is the description this is the description this is the description this is the description this is the description this is the descriptionthis is the descriptionthis is the description " , 120)}
+          {truncateDescription(Movie?.overview , 150)}
         </h1>
       </div>
       <div className="banner--fadeBottom"/>
