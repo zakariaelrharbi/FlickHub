@@ -1,15 +1,15 @@
 import './App.css'
 import HomeScreen from './Pages/HomeScreen'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
 
   return (
     <div className='App'>
       <Router>
-        <Switch>
-          <Route path='/'><HomeScreen/></Route>
-        </Switch>
+        <Routes>
+              <Route path='/' element={<HomeScreen/>}/>
+        </Routes>
       </Router>
     </div>
   )
