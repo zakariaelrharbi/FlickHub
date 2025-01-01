@@ -10,7 +10,6 @@ const LoginScreen = () => {
         <button className='loginScreen_btn'>Sign In</button>
         <div className='loginScreen_gradient'></div>
       </div>
-
     </div>
   )
 }
