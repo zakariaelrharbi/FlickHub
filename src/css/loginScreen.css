@@ -22,7 +22,7 @@
 .loginScreen_btn{
     position: fixed;
     right: 20px;
-    top: 12px;
+    top: 15px;
     padding: 10px 20px;
     font-size: 1rem;
     color: #fff;
@@ -43,4 +43,15 @@
         rgba(0, 0, 0, 0) 60%,
         rgba(0, 0, 0, 0.8) 100%
     );
+}
+.loginScreen_body{
+    position: absolute;
+    top: 30%;
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+}
+.loginScreen_body > h1{
+    font-size: 3.125rem;
+    margin-bottom: 20px;
 }
