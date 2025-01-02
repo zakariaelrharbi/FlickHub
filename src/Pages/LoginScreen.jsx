@@ -1,6 +1,5 @@
 import React from 'react'
-import '../css/LoginScreen.css';
-
+import '../css/loginScreen.css'
 
 const LoginScreen = () => {
   return (
