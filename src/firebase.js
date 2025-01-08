@@ -1,3 +1,5 @@
+import firebase from 'firebase';
+
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
   authDomain: "flickhub-7b35b.firebaseapp.com",
@@ -6,3 +8,4 @@ const firebaseConfig = {
   messagingSenderId: "293969060724",
   appId: "1:293969060724:web:902ed6ad4e1bf7af150221"
 };
+
