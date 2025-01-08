@@ -4,11 +4,12 @@ import { getAuth } from "firebase/auth";
 
 // Firebase configuration
 const firebaseConfig = {
-  authDomain: "flickhub-7b35b.firebaseapp.com", // Hard-coded
-  projectId: "flickhub-7b35b", // Hard-coded
-  storageBucket: "flickhub-7b35b.appspot.com", // Fixed storage bucket URL
-  messagingSenderId: "293969060724", // Hard-coded
-  appId: "1:293969060724:web:902ed6ad4e1bf7af150221" // Hard-coded
+  apiKey: 'AIzaSyDQLorzQ3bjBopbsq4Nt1zWaN9Er1vj0cQ', 
+  authDomain: "flickhub-7b35b.firebaseapp.com",
+  projectId: "flickhub-7b35b",
+  storageBucket: "flickhub-7b35b.appspot.com", 
+  messagingSenderId: "293969060724", 
+  appId: "1:293969060724:web:902ed6ad4e1bf7af150221" 
 };
 
 // Initialize Firebase
