@@ -4,10 +4,10 @@ import '../css/SignInPage.css'
 const SignInPage = () => {
 
   const register = (e) => {
-    e.prenventDefault();
+    e.preventDefault();
   }
   const login = (e) => {
-    e.prenventDefault();
+    e.preventDefault();
   }
   
 
