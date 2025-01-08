@@ -1,18 +1,23 @@
-import firebase from 'firebase';
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
+// Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: "flickhub-7b35b.firebaseapp.com",
-  projectId: "flickhub-7b35b",
-  storageBucket: "flickhub-7b35b.firebasestorage.app",
-  messagingSenderId: "293969060724",
-  appId: "1:293969060724:web:902ed6ad4e1bf7af150221"
+  // apiKey: 'AIzaSyDQLorzQ3bjBopbsq4Nt1zWaN9Er1vj0cQ', // Using environment variable only for the API key
+  authDomain: "flickhub-7b35b.firebaseapp.com", // Hard-coded
+  projectId: "flickhub-7b35b", // Hard-coded
+  storageBucket: "flickhub-7b35b.appspot.com", // Fixed storage bucket URL
+  messagingSenderId: "293969060724", // Hard-coded
+  appId: "1:293969060724:web:902ed6ad4e1bf7af150221" // Hard-coded
 };
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-const db = firebaseApp.firestore();
-const auth = firebase.auth();
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
-export {auth};
+// Initialize Firestore and Auth
+const db = getFirestore(app);
+const auth = getAuth(app);
+
+export { auth };
 export default db;
