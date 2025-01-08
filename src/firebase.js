@@ -1,4 +1,5 @@
 import firebase from 'firebase';
+import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
@@ -9,3 +10,5 @@ const firebaseConfig = {
   appId: "1:293969060724:web:902ed6ad4e1bf7af150221"
 };
 
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const db = firebaseApp.firestore();
