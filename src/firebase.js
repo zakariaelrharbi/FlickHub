@@ -4,7 +4,6 @@ import { getAuth } from "firebase/auth";
 
 // Firebase configuration
 const firebaseConfig = {
-  // apiKey: 'AIzaSyDQLorzQ3bjBopbsq4Nt1zWaN9Er1vj0cQ', // Using environment variable only for the API key
   authDomain: "flickhub-7b35b.firebaseapp.com", // Hard-coded
   projectId: "flickhub-7b35b", // Hard-coded
   storageBucket: "flickhub-7b35b.appspot.com", // Fixed storage bucket URL
