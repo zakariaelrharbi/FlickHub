@@ -7,7 +7,7 @@ const SignInPage = () => {
 
   const register = (e) => {
     e.preventDefault();
-    auth.createUserWithEmailandPassword(
+    auth.createUserWithEmailAndPassword(
       emailRef.current.value,
       passwordRef.current.value
     ).then((userAuth)=>{

@@ -1,10 +1,11 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { getAuth } from "firebase/auth";
+// Import the necessary Firebase modules
+import firebase from "firebase/compat/app";
+import "firebase/compat/firestore"; // Import Firestore compatibility
+import "firebase/compat/auth"; // Import Auth compatibility
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY, 
+  apiKey: 'AIzaSyDQLorzQ3bjBopbsq4Nt1zWaN9Er1vj0cQ', 
   authDomain: "flickhub-7b35b.firebaseapp.com",
   projectId: "flickhub-7b35b",
   storageBucket: "flickhub-7b35b.appspot.com", 
@@ -13,11 +14,11 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 // Initialize Firestore and Auth
-const db = getFirestore(app);
-const auth = getAuth(app);
+const db = firebaseApp.firestore(); // This works now because Firestore is imported
+const auth = firebase.auth(); // Auth works because it's imported
 
 export { auth };
 export default db;
