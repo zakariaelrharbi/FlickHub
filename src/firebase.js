@@ -4,7 +4,7 @@ import { getAuth } from "firebase/auth";
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyDQLorzQ3bjBopbsq4Nt1zWaN9Er1vj0cQ', 
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY, 
   authDomain: "flickhub-7b35b.firebaseapp.com",
   projectId: "flickhub-7b35b",
   storageBucket: "flickhub-7b35b.appspot.com", 
