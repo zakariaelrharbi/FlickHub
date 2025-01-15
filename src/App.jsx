@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { auth } from './firebase';
 import { useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from './store/userSlice';
+import ProfileScreen from './Pages/profileScreen';
 
 function App() {
   const user = useSelector(selectUser);
@@ -33,6 +34,7 @@ function App() {
         <Router>
           <Routes>
                 <Route path='/' element={<HomeScreen/>}/>
+                <Route path='/profile' element={<ProfileScreen/>}/>
           </Routes>
         </Router>
       }
