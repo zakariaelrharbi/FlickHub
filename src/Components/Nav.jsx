@@ -1,9 +1,12 @@
 import React , {useState, useEffect} from 'react'
 import '../css/Nav.css'
 import Avatar from '../assets/avatar.jpg'
+import { useNavigate } from 'react-router-dom';
 
 const Nav = () => {
   const [showNav, SetShowNav] = useState(0);
+  const navigate = useNavigate();
+  
   // function that hide and show nav bar while scrolling
   const toggleNav = ()=>{
     if(window.scrollY > 100){
@@ -22,7 +25,11 @@ const Nav = () => {
         {/* the logo */}
           <div className='Nav_logo'>FLICKHUB</div>
         {/* the avatar */}
-        <img className='Nav_avatar' src={Avatar} alt="" />
+        <img
+        onClick={()=>{
+          navigate('/profile')
+        }} 
+        className='Nav_avatar' src={Avatar} alt="" />
       </div>
     </div>
   )
