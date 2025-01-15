@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import LoginScreen from './Pages/LoginScreen';
 import { useEffect } from 'react';
 import { auth } from './firebase';
-import { useDispatch } from 'react-redux';
-import { login, logout } from './store/userSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { login, logout, selectUser } from './store/userSlice';
 
 function App() {
-  const user = null;
+  const user = useSelector(selectUser);
   const dispatch = useDispatch();
 
   useEffect(()=>{
