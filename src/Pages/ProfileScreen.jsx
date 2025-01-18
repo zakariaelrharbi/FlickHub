@@ -18,7 +18,9 @@ const ProfileScreen = () => {
           <img src={Avatar} alt="" />
           <div className="profileScreen_details">
             <h2>{user.email}</h2>
-            <div className="profileScreen_plans"></div>
+            <div className="profileScreen_plans">
+              <button>Sign Out</button>
+            </div>
           </div>
         </div>
       </div>
