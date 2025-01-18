@@ -23,7 +23,9 @@ const Nav = () => {
     <div className={` Nav ${showNav && 'Nav_black'}`}>
       <div className='Nav_contents'>
         {/* the logo */}
-          <div className='Nav_logo'>FLICKHUB</div>
+          <div onClick={()=>{
+          navigate('/')
+        }}  className='Nav_logo'>FLICKHUB</div>
         {/* the avatar */}
         <img
         onClick={()=>{
