@@ -22,11 +22,11 @@ function App() {
         }))  
       }else{
         // logout
-        dispatch(logout);
+        dispatch(logout());
       }
     })
     return unsubscribe;
-  },[]);
+  },[dispatch]);
   return (
     <div className='App'>
       {
